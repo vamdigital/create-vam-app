@@ -1,7 +1,8 @@
 {
   "env": {
     "browser": true,
-    "es2020": true
+    "es2020": true,
+    "jest": true
   },
   "extends": ["plugin:react/recommended", "standard"],
   "parser": "@typescript-eslint/parser",
@@ -17,6 +18,7 @@
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "double"],
     "space-before-function-paren": 0,
+    "no-tabs": 0,
     "no-use-before-define": 0,
     "trailing-comma": 0,
     "semi": [2, "always"],

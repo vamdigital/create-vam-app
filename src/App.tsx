@@ -1,23 +1,10 @@
 import { ReactComponent as Logo } from "assets/icons/logo.svg";
-import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Logo width={100} />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Logo width={100} />
+      <p>Hey 👋</p>
     </div>
   );
 }
