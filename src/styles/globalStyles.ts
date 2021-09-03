@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
 
@@ -17,6 +17,7 @@ html {
 		margin: 0;
 		padding: 0;
 		font-size: 16px;
+		font-family: 'IBM Plex Sans Arabic', sans-serif;
 		line-height: 1.5;
 	}
 
@@ -29,7 +30,14 @@ html {
 	button {
 		font-size: 12px;
 	}
+`;
 
-
+export const Container = styled.div`
+	display: flex;
+	width: 100%;
+	max-width: 1100px;
+	padding: 0 15px;
+	margin: 0 auto;
+	flex-direction: column;
 
 `;
