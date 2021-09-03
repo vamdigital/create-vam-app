@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-/* eslint-disable comma-dangle */
 import chalAnimation from "chalk-animation";
 import { exec } from "child_process";
 import fs, { appendFileSync, rmdirSync, unlinkSync } from "fs";
