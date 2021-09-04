@@ -42,7 +42,7 @@ export const HeaderComponent = () => {
   return (
 		<HeaderWrapper>
 			<LogoWrapper>
-				<Logo width={100} height={100}/>
+				<Logo width={100} height={50}/>
 				</LogoWrapper>
 			<Nav>
 				<NavWrapper>

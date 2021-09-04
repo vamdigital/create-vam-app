@@ -1,4 +1,5 @@
 import Header from "components/Header";
+import { CounterProvider } from "context/counter/CounterProvider";
 import { ContextPage } from "pages/ContextPage";
 import { HomePage } from "pages/HomePage";
 import { ReduxPage } from "pages/ReduxPage";
@@ -12,7 +13,11 @@ function App() {
 		<Container>
 			<Switch>
 				<Route path="/" exact><HomePage/></Route>
-				<Route path="/context" ><ContextPage/></Route>
+				<Route path="/context" >
+					<CounterProvider>
+					<ContextPage/>
+					</CounterProvider>
+				</Route>
 				<Route path="/redux"><ReduxPage /></Route>
 			</Switch>
 		</Container>
