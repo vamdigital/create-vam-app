@@ -39,5 +39,9 @@ export const Container = styled.div`
 	padding: 0 15px;
 	margin: 0 auto;
 	flex-direction: column;
+`;
 
+export const Main = styled.div`
+	display: flex;
+	width: 100%;
 `;
