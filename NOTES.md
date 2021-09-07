@@ -1,8 +1,9 @@
 # Tasks
 
-- [ ] Add React Router DOM
-  - [ ] Home Page
-  - [ ] Users Page - RTK - RTK Query
-  - [ ] Counter Page - Context
-- [ ] Add Context
-- [ ] Add RTK / RTK Query
+- [x] Add React Router DOM
+  - [x] Home Page
+  - [x] Counter Page - Context
+  - [ ] Redux Page - Posts ( RTK ) & Users ( React Query + RTK );
+- [x] Add Context
+- [x] Add RTK
+- [x] Add React Query

@@ -1,6 +1,7 @@
 import { ReactComponent as Logo } from "assets/icons/logo.svg";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import { Container } from "styles/globalStyles";
 
 const HeaderWrapper = styled.header`
 	display: flex;
@@ -27,6 +28,8 @@ const NavWrapper = styled.ul`
 
 const Nav = styled.nav`
 	display: flex;
+	width: 100%;
+	justify-content: flex-end;
 `;
 
 const NavList = styled.li`
@@ -41,6 +44,7 @@ const NavList = styled.li`
 export const HeaderComponent = () => {
   return (
 		<HeaderWrapper>
+			<Container>
 			<LogoWrapper>
 				<Logo width={100} height={50}/>
 				</LogoWrapper>
@@ -57,6 +61,7 @@ export const HeaderComponent = () => {
 					</NavList>
 				</NavWrapper>
 			</Nav>
+			</Container>
 		</HeaderWrapper>
   );
 };

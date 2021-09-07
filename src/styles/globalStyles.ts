@@ -5,7 +5,7 @@ export const GlobalStyles = createGlobalStyle`
 *, *:before, *:after{
 	box-sizing: inherit;
 }
-html, body {
+html {
 	overflow: hidden;
 	height: 100%;
 }
@@ -38,7 +38,6 @@ export const Container = styled.div`
 	max-width: 1100px;
 	padding: 0 15px;
 	margin: 0 auto;
-	flex-direction: column;
 `;
 
 export const Main = styled.div`
