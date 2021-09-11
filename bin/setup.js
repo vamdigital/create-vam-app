@@ -84,6 +84,7 @@ async function setup() {
 
     /** remove extra files and folders from disk. we don't need it anymore */
     unlinkSync(join(process.cwd(), "README.md"));
+    unlinkSync(join(process.cwd(), "NOTES.md"));
     unlinkSync(join(process.cwd(), "bin", "setup.js"));
     rmdirSync(join(process.cwd(), "bin"));
 
@@ -97,6 +98,11 @@ async function setup() {
         if (writeFileError) console.log(writeFileError);
         console.log("Title changed");
       });
+    });
+
+    // renaming Notes.mdx
+    fs.rename("./NOTES.mdx", "./NOTES.md", function (err) {
+      if (err) console.log("ERROR: " + err);
     });
 
     // eslint-disable-next-line quotes
@@ -125,13 +131,13 @@ function prompter() {
     .prompt([
       {
         name: "projectName",
-        message: "What is the name of your project?",
+        message: "What is the name of your project?"
       },
       {
         type: "confirm",
         name: "isVSCode",
-        message: "Do you want cli to open this Project in VSCode?",
-      },
+        message: "Do you want cli to open this Project in VSCode?"
+      }
     ])
     .then((answers) => {
       folderName = answers.projectName;
