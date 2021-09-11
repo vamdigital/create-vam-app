@@ -7,8 +7,8 @@ const HeaderWrapper = styled.header`
 	display: flex;
 	width: 100%;
 	padding: 10px;
-	background: #eeeeee;
-	border-bottom: 1px solid #9b9b9b;
+	background: var(--base07); 
+	border-bottom: 1px solid var(--base00);
 	justify-content: space-between;
 	align-items: center;
 `;
@@ -35,9 +35,11 @@ const Nav = styled.nav`
 const NavList = styled.li`
 	display: flex;
 	padding: 10px;
-
+	a {
+		color: var(--base0C)
+	}
 	a.active {
-		color: green;
+		color: var(--base09)
 	}
 `;
 
